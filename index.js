@@ -1,12 +1,12 @@
 setInterval(() => {
   d=new Date();
-  hr_time=d.getHours();
-  min_time=d.getMinutes();
-  sec_time=d.getSeconds();
-  hr_rotation=(30*hr_time)+(min_time/2);
-  min_rotation=6*min_time;
-  sec_rotation=6*sec_time;
-  hour.style.transform=`rotate(${hr_rotation}deg)`;
-  minute.style.transform=`rotate(${min_rotation}deg)`;
-  second.style.transform=`rotate(${sec_rotation}deg)`;
+  hour_time=d.getHours();
+  minute_time=d.getMinutes();
+  second_time=d.getSeconds();
+  hour_rotation=(30*hour_time)+(minute_time/2);
+  minute_rotation=6*minute_time;
+  second_rotation=6*second_time;
+  hour.style.transform=`rotate(${hour_rotation}deg)`;
+  minute.style.transform=`rotate(${minute_rotation}deg)`;
+  second.style.transform=`rotate(${second_rotation}deg)`;
 }, 1000);
